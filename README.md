@@ -1,1 +1,1 @@
-# First-diploma-project-Pinterest-
+# First-diploma-project
