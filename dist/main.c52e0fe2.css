@@ -1,0 +1,251 @@
+.frame {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(315px, 1fr));
+    justify-items: center;
+    position: relative;
+    top: 88.5px;
+}
+
+.post {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.post-picture {
+    height: 225px;
+    margin-bottom: 10px;
+}
+
+.post-picture__photo {
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.post-picture__photo:hover {
+    filter: brightness(60%);
+    transition: all 0.1s;
+}
+
+.fa-ellipsis {
+    color: #5f5f5f;
+    font-size: 20px;
+    position: relative;
+    bottom: 52px;
+    left: 250px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 8.5px 10px;
+    opacity: 80%;
+    display: none;
+}
+
+.fa-ellipsis:hover {
+    opacity: 100%;
+}
+
+.post-picture:hover .fa-ellipsis {
+    display: inline-block;
+}
+
+.post-description {
+    display: flex;
+    align-items: center;
+}
+
+.post-description__avatar {
+    width: 40px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.post-description__hashtag {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+}
+
+.post-picture-menu {
+    width: 200px;
+    height: 101px;
+    background-color: #ffffff;
+    display: none;
+    position: relative;
+    box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.52);
+    border-radius: 15px;
+    bottom: 45px;
+    left: 185px;
+    z-index: 1;
+}
+
+.post-picture-menu-container__add, .post-picture-menu__complain {
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    border: transparent;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 7px;
+}
+
+.post-picture-menu-container__add:hover, .post-picture-menu__complain:hover {
+    background-color: rgb(230, 229, 229);
+}
+
+.fa-chevron-right {
+    position: absolute;
+    bottom: 65px;
+    right: 17px;
+    font-size: 10px;
+    color: #5f5f5f;
+}
+
+.show-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-picture-menu-boards {
+    width: 170px;
+    height: 141px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.52);
+    border-radius: 15px;
+    left: 200px;
+    bottom: -40px;
+    z-index: 2;
+}
+
+.post-picture-menu-boards__button {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    border: transparent;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 7px;
+}
+
+.post-picture-menu-boards__button:hover {
+    background-color: rgb(230, 229, 229);
+}
+
+.show-board-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-picture-menu-complain {
+    width: 450px;
+    height: 550px;
+    display: none;
+    position: fixed;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border-radius: 15px;
+    left: 410px;
+    bottom: 16px;
+    box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.52);
+    z-index: 2;
+}
+
+.post-picture-menu-complain__headline {
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 15px;
+}
+
+.post-picture-menu-complain-options {
+    margin-bottom: 15px;
+}
+
+.post-picture-menu-complain-buttons {
+    width: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.post-picture-menu-complain-buttons__cancel {
+    width: 80px;
+    height: 45px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    border: transparent;
+    background-color: rgb(230, 229, 229);
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+.post-picture-menu-complain-buttons__send {
+    width: 90px;
+    height: 45px;
+    color: rgb(116, 116, 116);
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    border: transparent;
+    background-color: rgb(230, 229, 229);
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+.post-picture-menu-complain-options-option {
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: 400;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    border: transparent;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.post-picture-menu-complain-options__button {
+    width: 20px;
+    height: 20px;
+}
+
+.post-picture-menu-complain-options__text {
+    padding-left: 10px;
+    width: 380px;
+    font-weight: 400;
+    color: black;
+}
+
+.show-complain-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.active-send-button {
+    color: white;
+    background-color: #E60023;
+}
+
+/*# sourceMappingURL=/main.c52e0fe2.css.map */

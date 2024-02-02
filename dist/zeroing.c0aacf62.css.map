@@ -1,0 +1,1 @@
+{"version":3,"sources":["css/zeroing.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA","file":"zeroing.c0aacf62.css","sourceRoot":"..\\src","sourcesContent":["* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n}"]}
