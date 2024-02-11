@@ -6,6 +6,10 @@
     position: relative;
     top: 88.5px;
 }
+.frame > *:nth-child(4n + 2),
+.frame > *:nth-child(4n + 4) {
+    margin-top: 30px;
+}
 
 .post {
     width: 300px;
@@ -77,8 +81,8 @@
     box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.52);
     border-radius: 15px;
     bottom: 45px;
-    left: 185px;
-    z-index: 1;
+    left: 90px;
+    z-index: 5;
 }
 
 .post-picture-menu-container__add, .post-picture-menu__complain {
@@ -128,6 +132,10 @@
     z-index: 2;
 }
 
+.post:nth-child(4n) .post-picture-menu-boards {
+    left: -170px;
+}
+
 .post-picture-menu-boards__button {
     width: 150px;
     height: 40px;
@@ -162,7 +170,7 @@
     border-radius: 10px;
     border-radius: 15px;
     left: 410px;
-    bottom: 16px;
+    top: 100px;
     box-shadow: 0px 0px 18px -4px rgba(0,0,0,0.52);
     z-index: 2;
 }
@@ -246,4 +254,108 @@
 .active-send-button {
     color: white;
     background-color: #E60023;
+}
+
+@media screen and (max-width: 1259px){
+    .post:nth-child(3n) .post-picture-menu-boards {
+        left: -170px;
+    }
+    .post:nth-child(4n) .post-picture-menu-boards {
+        left: 200px;
+    }
+    .post-picture-menu-complain {
+        left: 340px;
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 944px){
+    .post:nth-child(2n) .post-picture-menu-boards {
+        left: -170px;
+    }
+    .post:nth-child(3n) .post-picture-menu-boards {
+        left: 200px;
+    }
+    .post-picture-menu-complain {
+        left: 95px;
+        top: 100px;
+    }
+}
+
+@media screen and (max-width: 629px){
+    .post:nth-child(2n) .post-picture-menu-boards, .post:nth-child(3n) .post-picture-menu-boards, .post:nth-child(4n) .post-picture-menu-boards {
+        left: -130px;
+    }
+    .post-picture-menu-boards {
+        width: 130px !important;
+        height: 90px !important;
+        left: -130px;
+        bottom: -10px;
+        width: 150px;
+        height: 121px;
+    }
+    .post-picture-menu-boards__button {
+        width: 100px !important;
+        height: 25px !important;
+        font-size: 10px !important;
+        padding-left: 7px !important;
+    }
+    .post-picture-menu {
+        width: 150px;
+        height: 80px;
+        left: 140px;
+        position: relative;
+    }
+    .post-picture-menu-container__add, .post-picture-menu__complain {
+        width: 125px;
+        height: 30px;
+        font-size: 10px;
+    }
+    .fa-chevron-right {
+        bottom: 50px;
+    }    
+    .post-picture-menu-complain {
+        width: 280px;
+        height: 350px;
+        left: 20px;
+        top: 170px;
+    }
+    .post-picture-menu-complain__headline {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .post-picture-menu-complain-options {
+        margin-bottom: 10px;
+    }
+    .post-picture-menu-complain-buttons {
+        width: 240px;
+    }
+    .post-picture-menu-complain-buttons__cancel {
+        width: 45px;
+        height: 25px;
+        font-size: 10px;
+        border-radius: 15px;
+        margin-right: 10px;
+    }
+    .post-picture-menu-complain-buttons__send {
+        width: 60px;
+        height: 25px;
+        font-size: 10px;
+        border-radius: 15px;
+        margin-right: 10px;
+    }
+    .post-picture-menu-complain-options-option {
+        width: 240px;
+        height: 25px;
+        border-radius: 10px;
+        font-size: 9px;
+    }
+    .post-picture-menu-complain-options__button {
+        width: 10px;
+        height: 10px;
+    }
+    .post-picture-menu-complain-options__text {
+        padding-left: 10px;
+        width: 240px;
+    }
 }
